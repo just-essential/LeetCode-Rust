@@ -1,3 +1,5 @@
+#[macro_use]
+mod prelude;
 mod to_100;
 #[cfg(test)]
 mod tests {
