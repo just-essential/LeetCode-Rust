@@ -8,3 +8,4 @@ mod problem_37;
 mod problem_41;
 mod problem_42;
 mod problem_44;
+mod problem_45;
