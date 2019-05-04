@@ -6,3 +6,4 @@ mod problem_30;
 mod problem_32;
 mod problem_37;
 mod problem_41;
+mod problem_42;
