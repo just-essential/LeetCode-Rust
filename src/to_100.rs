@@ -9,3 +9,4 @@ mod problem_41;
 mod problem_42;
 mod problem_44;
 mod problem_45;
+mod problem_51;
