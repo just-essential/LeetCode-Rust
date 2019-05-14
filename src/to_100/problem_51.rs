@@ -21,8 +21,6 @@ Output: [
 ]
 Explanation: There exist two distinct solutions to the 4-queens puzzle as shown above.
 */
-use std::cmp::min;
-
 struct Solution;
 
 impl Solution {
