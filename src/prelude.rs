@@ -30,3 +30,9 @@ macro_rules! linked_list {
         }
     };
 }
+#[macro_export]
+macro_rules! string_vec {
+    ($($x:expr),*) => (
+        vec![$($x.to_owned()),*]
+    );
+}
