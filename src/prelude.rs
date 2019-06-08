@@ -36,8 +36,9 @@ macro_rules! string_vec {
         vec![$($x.to_owned()),*]
     );
 }
-use std::rc::Rc;
+
 use std::cell::RefCell;
+use std::rc::Rc;
 
 #[derive(Debug, PartialEq, Eq)]
 pub struct TreeNode {

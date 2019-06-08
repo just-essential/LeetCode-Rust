@@ -25,7 +25,7 @@ impl Solution {
                 stack.push(i);
             } else {
                 stack.pop();
-                if let Some(last) = stack.last() {
+                if let Some(&last) = stack.last() {
                     if result < i - last {
                         result = i - last;
                     }
