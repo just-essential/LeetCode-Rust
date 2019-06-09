@@ -1,75 +1,56 @@
 //! Regular Expression Matching [link](https://leetcode.com/problems/regular-expression-matching/)
 //!
-//! Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.
-//!
+//! Given an input string (`s`) and a pattern (`p`), implement regular expression matching with support for `'.'` and `'*'`.
+//! ```plain
 //! '.' Matches any single character.
-//!
 //! '*' Matches zero or more of the preceding element.
-//!
-//! The matching should cover the entire input string (not partial).
+//! ```
+//! The matching should cover the **entire** input string (not partial).
 //!
 //! **Note:**
 //!
-//! - s could be empty and contains only lowercase letters a-z.
-//! - p could be empty and contains only lowercase letters a-z, and characters like . or *.
+//! - `s` could be empty and contains only lowercase letters `a-z`.
+//! - `p` could be empty and contains only lowercase letters `a-z`, and characters like `.` or `*`.
 //!
 //! **Example 1:**
-//!
-//! *Input:*
-//!
+//! ```plain
+//! Input:
 //! s = "aa"
-//!
 //! p = "a"
-//!
-//! *Output:* false
-//!
-//! *Explanation:* "a" does not match the entire string "aa".
-//!
+//! Output: false
+//! Explanation: "a" does not match the entire string "aa".
+//! ```
 //! **Example 2:**
-//!
-//! *Input:*
-//!
+//! ```plain
+//! Input:
 //! s = "aa"
-//!
 //! p = "a*"
-//!
-//! *Output:* true
-//!
-//! *Explanation:* '*' means zero or more of the preceding element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
-//!
+//! Output: true
+//! Explanation: '*' means zero or more of the precedeng element, 'a'. Therefore, by repeating 'a' once, it becomes "aa".
+//! ```
 //! **Example 3:**
-//!
-//! *Input:*
-//!
+//! ```pain
+//! Input:
 //! s = "ab"
-//!
 //! p = ".*"
-//!
-//! *Output:* true
-//!
-//! *Explanation*: ".*" means "zero or more (*) of any character (.)".
-//!
+//! Output: true
+//! Explanation: ".*" means "zero or more (*) of any character (.)".
+//! ```
 //! **Example 4:**
-//!
-//! *Input:*
-//!
+//! ```plain
+//! Input:
 //! s = "aab"
-//!
 //! p = "c*a*b"
-//!
-//! *Output:* true
-//!
-//! *Explanation:* c can be repeated 0 times, a can be repeated 1 time. Therefore it matches "aab".
-//!
+//! Output: true
+//! Explanation: c can be repeated 0 times, a can be repeated 1 time. Therefore it matches "aab".
+//! ```
 //! **Example 5:**
-//!
-//! *Input:*
-//!
+//! ```plain
+//! Input:
 //! s = "mississippi"
-//!
 //! p = "mis*is*p*."
-//!
-//! *Output:* false
+//! Output: false
+//! ```
 
 pub struct Solution;
 
@@ -102,23 +83,23 @@ mod test {
 
     #[test]
     fn example_1() {
-        assert_eq!(Solution::is_match("aa".to_string(), "a".to_string()), false);
+        assert_eq!(Solution::is_match("aa".to_owned(), "a".to_owned()), false);
     }
 
     #[test]
     fn example_2() {
-        assert_eq!(Solution::is_match("aa".to_string(), "a*".to_string()), true);
+        assert_eq!(Solution::is_match("aa".to_owned(), "a*".to_owned()), true);
     }
 
     #[test]
     fn example_3() {
-        assert_eq!(Solution::is_match("ab".to_string(), ".*".to_string()), true);
+        assert_eq!(Solution::is_match("ab".to_owned(), ".*".to_owned()), true);
     }
 
     #[test]
     fn example_4() {
         assert_eq!(
-            Solution::is_match("aab".to_string(), "c*a*b".to_string()),
+            Solution::is_match("aab".to_owned(), "c*a*b".to_owned()),
             true
         );
     }
@@ -126,7 +107,7 @@ mod test {
     #[test]
     fn example_5() {
         assert_eq!(
-            Solution::is_match("mississippi".to_string(), "mis*is*p*.".to_string()),
+            Solution::is_match("mississippi".to_owned(), "mis*is*p*.".to_owned()),
             false
         );
     }

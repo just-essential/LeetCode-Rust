@@ -1,6 +1,20 @@
+//! Merge k Sorted Lists [link](https://leetcode.com/problems/merge-k-sorted-lists/)
+//!
+//! Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+//!
+//! **Example:**
+//! ```plain
+//! Input:
+//! [
+//!   1->4->5,
+//!   1->3->4,
+//!   2->6
+//! ]
+//! Output: 1->1->2->3->4->4->5->6
+//! ```
 use crate::prelude::ListNode;
 
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn merge_k_lists(lists: Vec<Option<Box<ListNode>>>) -> Option<Box<ListNode>> {
@@ -49,8 +63,8 @@ mod test {
 
     #[test]
     fn example_1() {
-        let lists = vec![linked_list![1, 2, 3], linked_list![2, 3]];
-        let result = linked_list!(1, 2, 2, 3, 3);
-        assert_eq!(Solution::merge_k_lists(lists), result);
+        let input = vec![linked_list![1, 2, 3], linked_list![2, 3]];
+        let output = linked_list![1, 2, 2, 3, 3];
+        assert_eq!(Solution::merge_k_lists(input), output);
     }
 }
