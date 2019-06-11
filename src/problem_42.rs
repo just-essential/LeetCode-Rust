@@ -1,16 +1,14 @@
-/*
-Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+//! Trapping Rain Water [link](https://leetcode.com/problems/trapping-rain-water/)
+//!
+//! Given *n* non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
+//!
+//! **Example:**
+//! ```plain
+//! Input: [0,1,0,2,1,0,1,3,2,1,2,1]
+//! Output: 6
+//! ```
 
-
-The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped. Thanks Marcos for contributing this image!
-
-Example:
-
-Input: [0,1,0,2,1,0,1,3,2,1,2,1]
-Output: 6
-*/
-
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn trap(height: Vec<i32>) -> i32 {
