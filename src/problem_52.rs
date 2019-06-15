@@ -1,26 +1,28 @@
-/*
-The n-queens puzzle is the problem of placing n queens on an n×n chessboard such that no two queens attack each other.
+//! N-Queens II [link](https://leetcode.com/problems/n-queens-ii/)
+//!
+//! The *n*-queens puzzle is the problem of placing *n* queens on an *n*×*n* chessboard such that no two queens attack each other.
+//!
+//! Given an integer *n*, return the number of distinct solutions to the *n*-queens puzzle.
+//!
+//! **Example:**
+//! ```plain
+//! Input: 4
+//! Output: 2
+//! Explanation: There are two distinct solutions to the 4-queens puzzle as shown below.
+//! [
+//!  [".Q..",  // Solution 1
+//!   "...Q",
+//!   "Q...",
+//!   "..Q."],
+//!
+//!  ["..Q.",  // Solution 2
+//!   "Q...",
+//!   "...Q",
+//!   ".Q.."]
+//! ]
+//! ```
 
-Given an integer n, return the number of distinct solutions to the n-queens puzzle.
-
-Example:
-
-Input: 4
-Output: 2
-Explanation: There are two distinct solutions to the 4-queens puzzle as shown below.
-[
- [".Q..",  // Solution 1
-  "...Q",
-  "Q...",
-  "..Q."],
-
- ["..Q.",  // Solution 2
-  "Q...",
-  "...Q",
-  ".Q.."]
-]
-*/
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn total_n_queens(n: i32) -> i32 {
