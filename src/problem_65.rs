@@ -63,7 +63,7 @@ impl Solution {
         let mut state = State::Nil;
         for ch in s.chars() {
             match ch {
-                '0'...'9' => match state {
+                '0'..='9' => match state {
                     State::Nil | State::Sign | State::Integer => state = State::Integer,
                     State::Dot | State::JustDot | State::Decimal => state = State::Decimal,
                     _ => state = State::Exponent,
