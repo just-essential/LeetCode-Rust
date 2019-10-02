@@ -23,11 +23,4 @@ pub mod problem_85;
 pub mod problem_87;
 pub mod problem_97;
 pub mod problem_99;
-
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+pub mod problem_115;
